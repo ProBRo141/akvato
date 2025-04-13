@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Новый формат сеансов - RitmStyle</title>
+  <link rel="stylesheet" href="css/newformat.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo"></div>
+      <nav>
+        <ul onclick="toggleMenu()">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="index.html#seanses">Сеансы</a></li>
+          <li><a href="index.html#reviews">Отзывы</a></li>
+          <li><a href="index.html#contacts">Контакты</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="index.html">Обо мне</a></li>
+          <li><a href="blog.html">Блог</a></li>
+        </ul>
+      </nav>
+      <button class="primary">Записаться на сеанс</button>
+      <div class="burger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <div class="hr"><hr></div>
+
+  <section class="news-single" id="new-format">
+    <div class="container">
+      <h2>Новый формат сеансов</h2>
+      <div class="news-content">
+        <div class="news-text">
+          <div class="date-tag">13.02.2022</div>
+          <h3>Новый формат сеансов</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget massa vitae tempus at pretium lacus viverra. Vitae libero vivamus quis enim quam vitae dictumst nulla duis. Sed nisl nibh et morbi tristique suspendisse morbi. Consequat facilisi tortor consectetur magnis odio. Risus, aenean tortor cras consectetur lacus, ut erat ac et. Fermentum aliquam ac egestas eget risus a. Maecenas sed pellentesque bibendum vitae at praesent sed. Amet pretium arcu gravida arcu ut dui sem quis id. Tristique in leo donec proin odio eget. Neque ut in egestas lacus sit nunc, nec. Proin mattis augue sit leo sagittis nam id accumsan. Pulvinar nunc fermentum vulputate ultrices pulvinar sed ultrices quis.
+          </p>
+          <p>
+            Tempor facilisis tellus ac, odio. A amet congue tristique nibh malesuada lectus. Purus quam dapibus rhoncus iaculis amet tristique. Mattis fusce lorem fames mauris orci rhoncus, amet fringilla. Quis integer vitae at vitae urna etiam sed eu sit.
+          </p>
+          <p>
+            Vitae turpis ullamcorper habitant fermentum aliquet volutpat.
+          </p>
+        </div>
+        <div class="news-image">
+          <img src="img/girl3.jpg" alt="Новый формат сеансов">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="hr"><hr></div>
+
+  <footer>
+    <div class="container">
+      <span>© 2018–2022 RitmStyle</span>
+      <span>Сделано d-e-n.info</span>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector("header nav ul").classList.toggle("show");
+      document.querySelector(".burger").classList.toggle("show");
+    }
+  </script>
+</body>
+</html>
